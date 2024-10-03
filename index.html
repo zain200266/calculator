@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="display" id="dis" disabled placeholder="0">
+    <div class="buttons">
+      <button id="clear" onclick="clearAll('AC')">AC</button>
+      <button id="back" onclick="remove('<')">back</button>
+      <button id="percent" onclick="displayContent('%')">%</button>
+      <button id="division" onclick="displayContent('/')">/</button>
+      <button id="seven" onclick="displayContent('7')">7</button>
+      <button id="eight" onclick="displayContent('8')">8</button>
+      <button id="nine" onclick="displayContent('9')">9</button>
+      <button id="multiply" onclick="displayContent('*')">x</button>
+      <button id="four" onclick="displayContent('4')">4</button>
+      <button id="five" onclick="displayContent('5')">5</button>
+      <button id="six" onclick="displayContent('6')">6</button>
+      <button id="minus" onclick="displayContent('-')">-</button>
+      <button id="one" onclick="displayContent('1')">1</button>
+      <button id="two" onclick="displayContent('2')">2</button>
+      <button id="three" onclick="displayContent('3')">3</button>
+      <button id="plus" onclick="displayContent('+')">+</button>
+      <button id="zero" onclick="displayContent('0')">0</button>
+      <button id="dot" onclick="displayContent('.')">.</button>
+      <button class="equal" id="equalto" onclick="showResult('=')">=</button>
+    </div>
+  </div>
+  <script src="./index.js"></script> </body>
+</html>
